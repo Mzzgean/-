@@ -1,0 +1,26 @@
+body {
+    background: #dedede;
+}
+.pubu {
+    /*    弹性布局*/
+    display: flex;
+    /*    方向是横向的*/
+    flex-direction: row;  /*可以理解成 float left*/
+    margin-top: 80px;
+}
+.pubu > .pubu-items {
+    /*    弹性向的占比*/
+    flex: 1;
+    margin: 20px;
+}
+.pubu > .pubu-items >img {
+    width: 100%;
+    border: 10px solid #fff;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;/*淡入淡出*/
+}
+.pubu > .pubu-items >img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px 0px #999;
+}

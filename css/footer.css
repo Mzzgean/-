@@ -1,0 +1,110 @@
+footer {
+    height: 330px;
+    width: 100%;
+    background-color: #000;
+}
+.footer-t {
+    /*height: 250px;*/
+}
+.footer-t .foot-l {
+    float: left;
+    width: 800px;
+    height: 250px;
+}
+.footer-t .foot-l ol{
+    float: left;
+    margin-top: 15px;
+    line-height: 30px;
+    width: 160px;
+    font-size: 14px;
+}
+.footer-t .foot-l ol li:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.footer-t .foot-l ol li a {
+    color: #d1cbb5;
+}
+.footer-t .foot-l ol li .acolor {
+    color: #fed000;
+}
+.footer-t .foot-l ol li a:hover {
+    color: #fed000;
+}
+.footer-t .foot-r {
+    float: right;
+    width: 300px;
+    height: 250px;
+}
+.footer-d {
+    height: 80px;
+    background-color: #191919;
+}
+.foot-r {
+    position: relative;
+}
+.foot-r .foot-search-box {
+    /*width: 260px;*/
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    background: #fed000;
+    height: 25px;
+    border-radius: 50px;
+    padding: 10px;
+}
+.footer-search-btn {
+    color: #fff;
+    float: right;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fed000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.footer-search-txt {
+    width: 0px;
+    border : none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 14px;
+    transition: 0.4s;
+    line-height: 25px;
+}
+.foot-search-box:hover > .footer-search-txt {
+    width: 260px;
+    padding: 0 6px;
+    color: black;
+}
+.foot-search-box:hover > .footer-search-btn {
+    position: relative;
+    top: -25px;
+    background-color: #fed000;
+    color: black;
+}
+.foot-box-d {
+    width: 150px;
+    height: 140px;
+    position: relative;
+    top: 30%;
+    left: 80px;
+    background: url(../Updown/weixin.gif) center no-repeat;
+    background-size: cover;
+}
+.footer-d .footer-bottom {
+    font-size: 14px;
+    text-align: center;
+    line-height: 80px;
+}
+.footer-d .footer-bottom p {
+    color: #d1d1d1;
+}

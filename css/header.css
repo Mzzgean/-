@@ -1,0 +1,404 @@
+.header {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #000;
+    transition: height .3s;
+}
+.header.fixed {
+    height: 50px;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.3),0 0 6px 2px rgba(0,0,0,.15);
+}
+.header .logo {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    /*margin: 0;*/
+    width: 130px;
+    /*margin-top: 21px;*/
+    height: 45px;
+    background:  url(../image/logo-3.png) center no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+.header .logo h1 {
+    font-size: 0;
+}
+.header .top-tit {
+    float: left;
+    /*margin-left: 55px;*/
+    height: 90px;
+    line-height: 90px;
+    font-size: 16px;
+    transition: margin .3s;
+    border-right: 1px solid gray;
+}
+.header .top-tit a {
+    /*margin-left: 10px;*/
+    margin: 0 8px 0 4px;
+}
+.header .top-tit  .iconfont {
+    /*margin: 2px;*/
+    color: #fed000;
+}
+.header .top-center {
+    position: relative;
+    padding: 0 10px;
+    height: 90px;
+    border-right: 1px solid #666666;
+}
+.header .top-center ul {
+    line-height: 70px;
+}
+.header .top-center ul li{
+    float: left;
+    margin: 9px;
+    line-height: 75px;
+    font-size: 14px;
+    color: #999999;
+}
+.header .top-center ul li:hover {
+    color: #fed000;
+}
+.header .top-center ul li .part {
+    position: relative;
+    font-size: 18px;
+    line-height: 70px;
+    color: #fff;
+}
+.header .user-wrapper {
+    float: left;
+    margin-top: 32px;
+    transition: margin .3s;
+}
+.header .user-wrapper .search {
+    float: left;
+    font-size: 22px;
+    width: 25px;
+    margin-top: -8px;
+    margin-right: 10px;
+    text-align: center;
+}
+.header .user-wrapper .callus {
+    float: left;
+    /*width: 300px;*/
+}
+.callus .iconfont {
+    font-size: 20px;
+    line-height: 24px;
+}
+/*二维码*/
+.callus .icon-weixin,
+.callus  .icon-weibofangxing,
+.callus  .icon-QQ {
+    position: relative;
+}
+.callus .erweima,
+.callus .weibo,
+.callus .qq{
+    display: none;
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+.header .user-wrapper .callus ul li {
+    float: left;
+    margin: 0 14px;
+    font-size: 14px;
+}
+.header .links {
+    margin-top: 32px;
+}
+.slide-down-container {
+    font-size: 12px;
+    position: relative;
+    z-index: 100;
+    float: left;
+    margin-right: 20px;
+}
+.slide-down-container .title {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.slide-down-container .title .title-span {
+    max-width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.slide-down-container .title span {
+    position: relative;
+    vertical-align: middle;
+}
+.login-wrap {
+    font-size: 12px;
+    margin-left: 4px;
+}
+.header .links {
+    margin-top: 32px;
+}
+.header .links, .header .user-wrapper {
+    float: right;
+    transition: margin .3s;
+}
+#wrap {
+    width: 100%;
+}
+.cls {
+    width: 70%;
+    margin: 100px auto 0px auto;
+}
+.header.fixed .links, .header.fixed .user-wrapper {
+    margin-top: 10px;
+}
+.header.fixed .logo {
+    background-image: url(../image/logo-3.png);
+    width: 125px;
+    height: 70px;
+    margin-top: 10px;
+    transition: margin .3s;
+}
+.header.fixed .top-tit,
+.header.fixed .top-center {
+    margin-top: -20px;
+    overflow: hidden;
+    height: 70px;
+    transition: margin .3s;
+}
+.to-top {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 92%;
+}
+.to-top .iconfont {
+    font-size: 50px;
+}
+.center {
+    height: 3000px;
+    width: 1100px;
+    background-color: #fed000;
+}
+/*全部分类*/
+.part-main {
+    display: none;
+    position: fixed;
+    margin-top: 50px;
+    width: 1100px;
+    left: 9.3%;
+}
+.p-top {
+    height: 10px;
+    background-color: transparent;
+}
+.p-down {
+    background-color: #000;
+}
+.p-down .p-c {
+    width: 750px;
+    height: 150px;
+    margin: 0 auto;
+}
+.p-down ul {
+    padding: 0 25px;
+}
+.p-down li {
+    float: left;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+}
+.p-down li a {
+    float: left;
+    line-height: 70px;
+    font-size: 14px;
+}
+.p-down li span {
+    padding: 0 5px ;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+/*点击搜索跳出弹出框*/
+.search-header {
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+.search-tan {
+    width: 680px;
+    height: 480px;
+    position: absolute;
+    border: #ebebeb solid 1px;
+    left: 50%;
+    right: 50%;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px #ddd;
+    z-index: 9999;
+    margin-left: -340px;
+    margin-top: 80px;
+    display: none;
+}
+.search-title {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    font-size: 18px;
+    position: relative;
+    cursor: move;
+    color: black;
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+}
+/* 文字不能选中 */
+.search-input-content {
+    margin-top: 20px;
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+}
+.search-input {
+    overflow: hidden;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 30px;
+    /*margin: 0px 0px 20px 0px;*/
+}
+.search-input .input-main {
+    width: 540px;
+    height: 40px;
+    /*去除文本框默认边框*/
+    outline: medium;
+    padding-left: 10px;
+    border:1px solid #fed000;
+
+}
+.search-input .btn-icon {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    right: 46px;
+    top: -1px;
+    background-color: #fff;
+}
+.search-input .btn-icon .iconfont {
+    width: 50px;
+    height: 50px;
+}
+.search-tan .search-button {
+    width: 580px;
+    margin: 45px auto 0px auto;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    /* 浏览器兼容性*/
+    -moz-user-select: none;
+    /*火狐*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+}
+.search-tan .search-button p {
+    position: relative;
+    left: -43%;
+}
+.search-tan .search-button .all-search {
+    width: 580px;
+    height: 200px;
+    border-top: #fed000 1px solid;
+}
+.search-button .all-search ul {
+    float: left;
+    margin-top: 15px;
+}
+.search-tan .search-button .all-search ul li {
+    /*float: left;*/
+    width: 130px;
+    text-align: left;
+    padding-left: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.search-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;  /* 有滚动条也有遮盖效果 */
+    top: 0px;
+    left: 0px;
+    background: #000000;
+    filter: alpha(opacity=30);
+    -moz-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+    display: none;
+}
+.search-button a {
+    display: block;
+}
+.search-input input.list-input {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    width: 350px;
+    border: #ebebeb 1px solid;
+    text-indent: 5px;
+}
+.search-input label {
+    float: left;
+    width: 90px;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+}
+.search-title span {
+    position: absolute;
+    font-size: 12px;
+    right: -20px;
+    top: -30px;
+    background: #ffffff;
+    border: #ebebeb solid 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
