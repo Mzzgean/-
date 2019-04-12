@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/comment.css">
+    <style>
+        body {
+            background: #dedede;
+        }
+        .pubu {
+        /*    弹性布局*/
+            display: flex;
+        /*    方向是横向的*/
+            flex-direction: row;  /*可以理解成 float left*/
+        }
+        .pubu > .pubu-items {
+        /*    弹性向的占比*/
+            flex: 1;
+            margin: 20px;
+        }
+        .pubu > .pubu-items >img {
+            width: 100%;
+            border: 10px solid #fff;
+            margin-top: 15px;
+            transition: all 0.3s ease-in-out;/*淡入淡出*/
+        }
+        .pubu > .pubu-items >img:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px 0px #999;
+        }
+    </style>
+</head>
+<body>
+<div class="pubu container">
+    <div class="pubu-items" id="pubu-01">
+    </div>
+    <div class="pubu-items" id="pubu-02">
+    </div>
+    <div class="pubu-items" id="pubu-03">
+    </div>
+    <div class="pubu-items" id="pubu-04">
+    </div>
+</div>
+<script>
+<!--    屏幕大小,初始化图片的占用位置-->
+    windowHeight = window.screen.height + 500;
+    //准备图片
+    var imgId = 0;
+    window.onload = function () {
+        insertImg();
+        //监听滚动事件
+        window.document.addEventListener("scroll", function () {
+            //二次加载的时候要去判断
+            //document.documentElement.scrollTop :已经滚动的内容高度
+            //window.screen.height :窗口高度
+            //document.documentElement.scrollHeight : 能滚动的最大高度
+            if(document.documentElement.scrollTop + window.screen.height > document.documentElement.scrollHeight){
+            //    重新去插入图片  再次加载的时候 改变预期 500
+                windowHeight += 500;
+                insertImg();
+            }
+        });
+    }
+    //插入图片的算法 封装一个函数
+    var insertImg = function () {
+        var intter = setInterval(function () {
+            //文档里的文档节点 他的对应往下可以滚动的高度 > 了之前设置的高度  就可停下了
+            if (document.documentElement.scrollHeight >windowHeight){
+                //达到预期高度就停止
+                clearInterval(intter);
+            }
+            //给浏览器设置时间 让他有充分时间往里面去插入图片 确认完成 再去执行下一步操作
+            var mDiv = mainDiv();
+            //插图是要判断
+            imgId ++;
+            if (imgId > 10) {
+                imgId = 1 ;
+            }
+            var img = document.createElement('img');
+            //设置节点
+            img.setAttribute('src',"img/"+imgId+".jpg");
+            //把节点放进去----放图  给浏览器一个指令----插图.但是浏览器的渲染还没有完成. 什么时候完成 取决于浏览器
+            mDiv.appendChild(img);
+        },100);
+    }
+    var mainDiv = function () {
+        var pb1 = document.getElementById('pubu-01');
+        var pb2 = document.getElementById('pubu-02');
+        var pb3 = document.getElementById('pubu-03');
+        var pb4 = document.getElementById('pubu-04');
+
+    //    拿到img里面的图
+        var pbImgs_1 = pb1.children;
+        var pbImgs_2 = pb2.children;
+        var pbImgs_3 = pb3.children;
+        var pbImgs_4 = pb4.children;
+
+        var pb1Height = jisuan(pbImgs_1);
+        var pb2Height = jisuan(pbImgs_2);
+        var pb3Height = jisuan(pbImgs_3);
+        var pb4Height = jisuan(pbImgs_4);
+
+        var minHeight = Math.min(pb1Height,pb2Height,pb3Height,pb4Height);
+        if(minHeight == pb1Height){
+            return pb1;
+        }
+        if(minHeight == pb2Height){
+            return pb2;
+        }
+        if(minHeight == pb3Height){
+            return pb3;
+        }
+        if(minHeight == pb4Height){
+            return pb4;
+        }
+    }
+//    1拿到集合 进行计算
+    var jisuan = function (pbImgs) {
+        //2判断是否存在图片
+        if (pbImgs == null || pbImgs.length == 0) {
+            return 0;
+        }else  {
+            // 6在累加前 需要
+            var height = 0;
+            //3获取到当前列每一个图片
+            for (var i = 0; i < pbImgs.length; i++) {
+                var img = pbImgs[i];
+                //4拿到高度
+                var h = img.height;
+            //   5 进行累加
+                height += h;
+            }
+            //7循环结束
+            return height;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>乙己-为静心阅读而生</title>
+    <meta name="description" content="乙己图书-有品格的数字图书馆,爱上阅读,享受阅读." />
+    <meta name="Keywords" content="乙己阅读,在线阅读,电子书籍下载,书籍推荐" />
+    <!--引用字体图标css文件-->
+    <link rel="shortcut icon" href="image/logo_favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/comment.css">
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="font/font_1128196_qt1l15oask/iconfont.css">
+    <script src="font/font_1128196_qt1l15oask/iconfont.js"></script>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<!--顶部-->
+<div class="wrap">
+    <div class="header" id="top" >
+        <div class="wrapper container clearfix">
+            <!--             logo-->
+            <a href="javascript:void(0)" class="logo">
+                <h1>乙己图书</h1>
+            </a>
+            <div class="top-tit">
+                <a href="javascript:"><span class="iconfont icon-haoqixin"></span> 乙己研究所</a>
+                <a href="javascript:"><span class="iconfont icon-zhongxin"></span> 阅读中心</a>
+            </div>
+            <div class="top-center fl">
+                <!--                 全部分类-->
+                <div class="part-main container" id="part-main">
+                    <!--                     障眼法 top透明 down黑色-->
+                    <div class="p-top"></div>
+                    <div class="p-down">
+                        <div class="p-c">
+                            <ul class="clearfix">
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>资讯</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>国学/古籍</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>出版图书</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>电子书</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>网络小说</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>在线阅读</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>书法</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>设计</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>专题</a></li>
+                                <li><a href="javascript:"><span class="iconfont icon-zhegerenyouhaoqixin"></span>分类</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--                 顶部中间内容-->
+                <div class="uls">
+                    <ul class="clearfix">
+                        <a href="javascript:"><li>Top15</li></a>
+                        <a href="javascript:"><li>文学</li></a>
+                        <a href="javascript:"><li>科技</li></a>
+                        <a href="javascript:"><li>时尚</li></a>
+                        <a href="javascript:"><li>艺术</li></a>
+                        <a href="javascript:"><li>文化</li></a>
+                        <a href="javascript:"><li>计算机</li></a>
+                        <a href="javascript:"><li>推荐</li></a>
+                        <li class="part">
+                            <a id="classify" href="javascript:">全部分类<span class="iconfont icon-triangle-down"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--             搜索  点击搜索 弹出框-->
+            <div class="user-wrapper">
+                <div class="search">
+                    <a id="link" href="javascript:"><span class="iconfont icon-icon-"></span></a>
+                </div>
+                <!--搜索弹出框-->
+                <!--如果a的href属性值中.协议名是javascript. 那么点击a标签的时候,就会执行:后面的代码-->
+                <div id="search-tan" class="search-tan">
+                    <div id="title" class="search-title">
+                        <span><a id="closeBtn" href="javascript:void(0);" class="close-search  m-color">关闭</a></span>
+                    </div>
+                    <div class="search-input-content">
+                        <div class="search-input">
+                            <input class="input-main" type="text" placeholder="请输入书名/作者/关键字">
+                            <button class="btn-icon"><span class="iconfont icon-icon-"></span></button>
+                        </div>
+                    </div>
+                    <div id="searchBtn" class="search-button">
+                        <p>大家都在搜</p>
+                        <div class="all-search clearfix">
+                            <ul>
+                                <li><a class="m-color2" href="javascript:">蜜汁炖鱿鱼</a></li>
+                                <li><a class="m-color2" href="javascript:">李敖自传</a></li>
+                                <li><a class="m-color2" href="javascript:">北京的隐秘角落</a></li>
+                                <li><a class="m-color2" href="javascript:">日本画记</a></li>
+                                <li><a class="m-color2" href="javascript:">皮肤的秘密</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="m-color2" href="javascript:">建水记</a></li>
+                                <li><a class="m-color2" href="javascript:">房思琪的初恋乐园</a></li>
+                                <li><a class="m-color2" href="javascript:">至大金陵新志</a></li>
+                                <li><a class="m-color2" href="javascript:">建水记</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="m-color2" href="javascript:">谈美书简</a></li>
+                                <li><a class="m-color2" href="javascript:">谈美</a></li>
+                                <li><a class="m-color2" href="javascript:">思考的艺术</a></li>
+                                <li><a class="m-color2" href="javascript:">一神论的影子</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="m-color2" href="javascript:">德国哲学</a></li>
+                                <li><a class="m-color2" href="javascript:">伊雍</a></li>
+                                <li><a class="m-color2" href="javascript:">读书与书籍</a></li>
+                                <li><a class="m-color2" href="javascript:">孟子旁通</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--                 联系我们-->
+                <div class="callus">
+                    <ul class="clearfix">
+                        <li><a href="#">登录注册</a></li>
+                        <!--                         鼠标移入 显示二维码-->
+                        <li><a href="#">
+                             <span id="weixin" class="iconfont icon-weixin">
+                                 <img id="w-ma" class="erweima" src="Updown/weixin.gif" alt="扫一扫">
+                             </span>
+                        </a></li>
+                        <li><a href="#">
+                             <span id="weibo" class="iconfont icon-weibofangxing">
+                                 <img id="w-bo" class="erweima" src="Updown/weibo.jpg" alt="扫一扫">
+                             </span></a></li>
+                        <li><a href="#">
+                             <span id="qq" class="iconfont icon-QQ">
+                                 <img id="qq-ma" class="erweima" src="Updown/weixin.gif" alt="扫一扫">
+                             </span></a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--全部分类 点击显示 隐藏部分-->
+<div class="part-box">
+    <!--     <div class="part-main container" id="part-main"></div>-->
+</div>
+<!--回到顶部-->
+<div class="to-top" id="totop">
+    <span class="iconfont icon-reqiqiu"></span>
+</div>
+<!-- 遮盖层 -->
+<div id="bg" class="search-bg"></div>
+<div class="center container"></div>
+
+<!--图书介绍-->
+<div class="books-product container clearfix">
+    <div class="bp-left cl">
+        <div class="bp-l-top clearfix">
+            <div class="bp-l-t-prod">
+                <div class="book-l">
+                    <img src="img/10.jpg" alt="">
+                </div>
+                <div class="book-r">
+                    <h4> 《藏纳天下》</h4>
+                    <i>作者 : 周大光 　出版社 : 人民文学出版社</i>
+                    <p><em class="i">简介 :</em><br>
+                        翩若惊鸿的洛神，会从画里跑出来杀人？
+                        她是保福帝姬，宋徽宗之女，他是刑警队长，微表情专家。
+                        两个跨越近千年的人，因为一幅《洛神赋图》，因为一场诡异的凶杀案，聚到了一起。</p>
+                    <br>
+                    <input type="button" value="立即阅读">
+                    <input type="button" value="目录">
+                    <br>
+                    <span class="span">作品标签 : 　<span>收藏</span> 　 <span>艺术</span> 　<span>鉴赏</span></span>
+                </div>
+                <div class="bp-sharp">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin3"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-pengyouquan"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo1"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-in"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-kongjian1"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-douban"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="bp-l-down">
+                <div class="bp-l-down-tit">
+                    <h2>最新章节</h2>
+                </div>
+                <div class="bp-l-down-ma">
+                    <a href="javascript:"><h3>第80章 地域文化</h3></a>
+                    <p>树愈老花愈盛，姿愈靓实愈蕃。
+                        吾观于宝塔寺之海棠，万寿寺之梨，丰泽园之杏，而叹其与人适相反，
+                        何天厚于物而薄于人耶？虽然，树一植物耳，知觉少，故能全其天。
+                        夫天全者，无苦疾、无老死、无生亦无灭，人苟不自戕伐，与天地长存可也。
+                        未老而先衰，岂天之咎哉？悲乎，可以猛省矣！
+                        东安市场得唐京兆府三原县《重修东岳庙记》，
+                        颜真卿撰书，字大如拳，有《离塘记》、《东方朔画像赞》之体裁，
+                        遍检石刻各书，皆未著录。近在关中，何以竟无知者？拓本墨色似是二百年前氇蜡，
+                        一字不损，其文亦简当有法，真可异也。索价甚昂，以其罕见，姑留之以待考定耳。
+                        近代铜炉之佳者，其铜皆和合，即宣德晚年，有淡青色如蟹壳者，亦参有铅、锡等物。
+                        惟清初和家仿宣，则有纯用黄铜者。又明末如云间胡文明、朱震明等炉，雕镂虽工，烧之，并不起朱绿斑点，其色亦不莹澈，此皆提炼未精故耳。
+                        唐冢出土小杯白土胚，糙米釉，作玻璃碎纹，把处如刀环，极精雅。
+                        延古得之河南，一金归我。又有元瓷碟，内深青，外环淡白，隐隐若晕，中贯紫色一道，余名之曰“暮雨长虹”。天然奇景也。三十番得之。
+                        邱凤真自江南来，为其东家备礼物寿辽帅，求余鉴定。
+                        </p>
+                    <div class="down-pinglun clearfix">
+                        <strong class="fl">评论专区</strong>
+                        <input class="fr" type="button" value="立即评论">
+                    </div>
+                </div>
+                <div class="bp-l-down-comm clearfix">
+                    <div class="bp-down-com-top clearfix">
+                        <div class="dc-touxiang">
+                            <a href="javascript:"><img src="image/read.jpg" alt=""></a>
+                        </div>
+                        <div class="dc-pingjia">
+                            <div class="pingjia-name clearfix">
+                                <i>云念小小v</i>
+                                <em>14天前</em>
+                                <p>作者辛苦了！送上鲜花，聊表心意！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dc-dianzan">
+                        <span class="iconfont icon-zan"> (0)</span>
+                        <span class="iconfont icon-liuyan"> (0)</span>
+                    </div>
+                </div>
+                <div class="bp-l-down-comm">
+                    <div class="bp-down-com-top clearfix">
+                        <div class="dc-touxiang">
+                            <a href="javascript:"><img src="image/read.jpg" alt=""></a>
+                        </div>
+                        <div class="dc-pingjia">
+                            <div class="pingjia-name clearfix">
+                                <i>云念小小v</i>
+                                <em>14天前</em>
+                                <p>作者辛苦了！送上鲜花，聊表心意！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dc-dianzan">
+                        <span class="iconfont icon-zan"> (0)</span>
+                        <span class="iconfont icon-liuyan"> (0)</span>
+                    </div>
+                </div>
+                <div class="bp-l-down-comm">
+                    <div class="bp-down-com-top clearfix">
+                        <div class="dc-touxiang">
+                            <a href="javascript:"><img src="image/read.jpg" alt=""></a>
+                        </div>
+                        <div class="dc-pingjia">
+                            <div class="pingjia-name clearfix">
+                                <i>云念小小v</i>
+                                <em>14天前</em>
+                                <p>作者辛苦了！送上鲜花，聊表心意！</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dc-dianzan">
+                        <span class="iconfont icon-zan"> (0)</span>
+                        <span class="iconfont icon-liuyan"> (0)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bp-right">
+        <div class="bp-ad">
+            <a href="javascript:"><img src="image/ad1.jpg" alt=""></a>
+        </div>
+        <div class="bp-ad">
+            <a href="javascript:"><img src="image/ad3.jpg" alt=""></a>
+        </div>
+        <div class="bp-ad">
+            <a href="javascript:"><img src="image/ad2.jpg" alt=""></a>
+        </div>
+        <div class="bp-ad">
+            <a href="javascript:"><img src="image/ad2.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<!--底部-->
+<footer>
+    <div class="footer-t container clearfix">
+        <div class="foot-l clearfix">
+            <ol>
+                <li><a class="acolor" href="javascript:">首页</a></li>
+                <li><a href="javascript:">T15</a></li>
+                <li><a href="javascript:">推荐</a></li>
+                <li><a href="javascript:">图示资源</a></li>
+                <li><a href="javascript:">关于乙己</a></li>
+                <li><a href="javascript:">联系我们</a></li>
+            </ol>
+            <ol>
+                <li><a class="acolor" href="javascript:">书籍推荐</a></li>
+                <li><a href="javascript:">钦定大清会典图</a></li>
+                <li><a href="javascript:">画万年花甲</a></li>
+                <li><a href="javascript:">钦定授时通考</a></li>
+                <li><a href="javascript:">钟伯敬先生批评水浒</a></li>
+                <li><a href="javascript:">千金翼方</a></li>
+                <li><a href="javascript:">仪凤元年金刚经</a></li>
+            </ol>
+            <ol>
+                <li><a class="acolor" href="javascript:">乙己推荐</a></li>
+                <li><a href="javascript:">世界数字图书馆</a></li>
+                <li><a href="javascript:">中国历史照片</a></li>
+                <li><a href="javascript:">搜韵-影印古籍资料</a></li>
+                <li><a href="javascript:">今日应用</a></li>
+                <li><a href="javascript:">好奇心日报</a></li>
+            </ol>
+            <ol>
+                <li><a class="acolor" href="javascript:">读书导航</a></li>
+                <li><a href="javascript:">搜狐读书</a></li>
+                <li><a href="javascript:">凤凰读书</a></li>
+                <li><a href="javascript:">新华阅读</a></li>
+                <li><a href="javascript:">文明网阅读</a></li>
+            </ol>
+            <ol>
+                <li><a class="acolor" href="javascript:">电子书</a></li>
+                <li><a href="javascript:">kindle</a></li>
+                <li><a href="javascript:">书格</a></li>
+                <li><a href="javascript:">鸠摩搜书</a></li>
+                <li><a href="javascript:">走读派</a></li>
+                <li><a href="javascript:">苦瓜阅读</a></li>
+            </ol>
+        </div>
+        <div class="foot-r">
+            <div class="foot-search-box">
+                <input class="footer-search-txt" type="text" name="" placeholder="请输入">
+                <a href="javascript:" class="footer-search-btn">
+                    <span class="iconfont icon-icon-"></span>
+                </a>
+            </div>
+            <div class="foot-box-d"></div>
+        </div>
+    </div>
+    <div class="footer-d">
+        <div class="footer-bottom container">
+            <p> 乙己阅读（RSS）｜ <a href="javascript:">联系</a> ｜ <a href="javascript:">捐助</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/comment.js"></script>
+<script src="js/head.js"></script>
+</body>
+</html>
